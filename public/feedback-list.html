@@ -54,7 +54,7 @@
     <div id="messages"></div>
 
     <script>
-        fetch('/feedback')
+        fetch(window.location.origin + '/feedback')
             .then(response => response.json())
             .then(data => {
                 const container = document.getElementById('messages');
